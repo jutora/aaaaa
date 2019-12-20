@@ -2,7 +2,7 @@ name: Upload.
 
 on:
   schedule:
-    - cron: '58 6 * * *'
+    - cron: '0 16 * * *'
 
 jobs:
   deploy:
