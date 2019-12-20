@@ -1,0 +1,4 @@
+bug:
+  - .github/**
+invalid:
+  - aaa
