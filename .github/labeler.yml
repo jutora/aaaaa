@@ -1,4 +1,4 @@
-- regExp: "bbb"
-  labels: ["bbbb"]
-- regExp: "ggg"
-  labels: ["cccc"]
+bug:
+  - .github/**
+invalid:
+  - aaa

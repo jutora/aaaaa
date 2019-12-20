@@ -1,16 +1,13 @@
 name: CI
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Labeler
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        CONFIG_PATH: ${{ secrets.GITHUB_WORKSPACE }}/.github/labeler.yml
-      run: echo Hello, world!
+    - uses: actions/labeler@v2
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
     - name: Debugging with tmate
       uses: mxschmitt/action-tmate@v1.0.2
