@@ -1,0 +1,40 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Webページ作成</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="wrapper">
+        <article class="right">
+          <h1>RIGHT</h1>
+          <p>
+            右側コンテンツ
+          </p>
+        </article>
+        <section class="left">
+          <h1>LEFT</h1>
+          <p>
+            左側コンテンツ
+          </p>
+        </section>
+      </div>
+    </body>
+</html>
+
+
+style.css
+
+.right {
+  background: RED;
+}
+.left {
+  background: GREEN;
+}
+.wrapper {
+    display: -webkit-flex;
+    空欄
+}
